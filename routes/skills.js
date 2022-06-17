@@ -4,8 +4,13 @@ import * as skillsCtrl from '../controllers/skills.js'
 const router = Router()
 
 
-router.get('/',skillsCtrl.new)
+router.get('/',skillsCtrl.index)
 
 router.get('/new',skillsCtrl.new)
 
-router.post('/',skillsCtrl)
+router.post('/',skillsCtrl.create)
+
+
+export{
+    router
+}
