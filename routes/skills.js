@@ -7,3 +7,5 @@ const router = Router()
 router.get('/',skillsCtrl.new)
 
 router.get('/new',skillsCtrl.new)
+
+router.post('/',skillsCtrl)
